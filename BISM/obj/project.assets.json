@@ -8518,11 +8518,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Balimoon\\BISM\\BISM\\BISM.csproj",
+      "projectUniqueName": "D:\\Balimoon\\BISM\\ASP.NETCore-BISManufaktur\\BISM\\BISM.csproj",
       "projectName": "BISM",
-      "projectPath": "D:\\Balimoon\\BISM\\BISM\\BISM.csproj",
+      "projectPath": "D:\\Balimoon\\BISM\\ASP.NETCore-BISManufaktur\\BISM\\BISM.csproj",
       "packagesPath": "C:\\Users\\IT-Dev\\.nuget\\packages\\",
-      "outputPath": "D:\\Balimoon\\BISM\\BISM\\obj\\",
+      "outputPath": "D:\\Balimoon\\BISM\\ASP.NETCore-BISManufaktur\\BISM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",

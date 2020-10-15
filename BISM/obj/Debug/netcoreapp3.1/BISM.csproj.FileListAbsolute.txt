@@ -136,7 +136,6 @@ D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\BISM.AssemblyInfo.cs
 D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\BISM.TagHelpers.input.cache
 D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\BISM.TagHelpers.output.cache
 D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\BISM.RazorCoreGenerate.cache
-D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\Razor\Views\Shared\custom\_Footer.cshtml.g.cs
@@ -157,4 +156,3 @@ D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\BISM.Views.pdb
 D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\BISM.csproj.CopyComplete
 D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\BISM.dll
 D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\BISM.pdb
-D:\Balimoon\BISM\BISM\obj\Debug\netcoreapp3.1\BISM.csprojAssemblyReference.cache
