@@ -1,0 +1,9 @@
+﻿@using static BISM.helpers.NavigationIndicatorHelper;
+<ul class="main-menu">
+    <li class="@Url.MakeActiveClass("home","index")">
+        <a asp-controller="Home" asp-action="Index"><i class="zmdi zmdi-home"></i> Home</a>
+    </li>
+    <li class="@Url.MakeActiveClass("home","privacy")">
+        <a asp-controller="Home" asp-action="Privacy"><i class="zmdi zmdi-lock"></i> Privacy</a>
+    </li>
+</ul>
