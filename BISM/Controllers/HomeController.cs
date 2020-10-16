@@ -29,5 +29,10 @@ namespace BISM.Controllers
         {
             return View();
         }
+        [AuthorizedAction]
+        public IActionResult show()
+        {
+            return View("Index");
+        }
     }
 }

@@ -14,7 +14,8 @@ namespace BISM.helpers
 {
     public class AuthorizedAction : ActionFilterAttribute
     {
-
+        
+        
         public override void OnResultExecuting(ResultExecutingContext filterContext)
         {
 
@@ -22,6 +23,7 @@ namespace BISM.helpers
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
+           
             base.OnActionExecuting(filterContext);
             if (filterContext.HttpContext.Session.GetString("UserCode") == null)
             //if(filterContext.HttpContext.User.Identity.IsAuthenticated == false)
@@ -39,17 +41,21 @@ namespace BISM.helpers
             }
 
             var menus = JsonConvert.DeserializeObject<List<Systemusermenu>>(filterContext.HttpContext.Session.GetString("menus"));
+            var listParent = JsonConvert.DeserializeObject<List<Systemusermenu>>(filterContext.HttpContext.Session.GetString("menus")).Select(s => s.ParentId);
+            var listChild = JsonConvert.DeserializeObject<List<Systemusermenu>>(filterContext.HttpContext.Session.GetString("menus")).Select(s => s.ChildId);
             var controllerName = filterContext.RouteData.Values["controller"];
-            var actionName = filterContext.RouteData.Values["action"];
-            string url = "/" + controllerName + "/" + actionName;
+            var actionName = filterContext.RouteData.Values["action"];           
+            var permissions = JsonConvert.DeserializeObject<List<Systempermission>>(filterContext.HttpContext.Session.GetString("permissions"));
+            var objects = JsonConvert.DeserializeObject<List<Systemobject>>(filterContext.HttpContext.Session.GetString("object"));
 
-           /* if (!menus.Where(s => s.SystemUserMenuId == url).Any())
-
-            {
+            if (!objects.Where(s => s.ActionName == Convert.ToString(actionName) && s.ControllerName == Convert.ToString(controllerName)).Any()){
                 filterContext.Result = new RedirectToRouteResult(
                     new RouteValueDictionary { { "controller", "Account" }, { "action", "Login" } });
                 return;
-            }*/
+            }
+           
+
+
         }
     }
 }

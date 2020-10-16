@@ -61,6 +61,13 @@ namespace BISM.Controllers
                         HttpContext.Session.SetString("menuString", menuString);
                         HttpContext.Session.SetString("menus", JsonConvert.SerializeObject(SystemUserMenus));
 
+
+                        //get role and object ID
+                        List<Systempermission> systempermissions = _mainSystemContext.Systempermission.Where(a => a.RoleId == roles).ToList();
+                        
+                        List<Systemobject> systemobjects = _mainSystemContext.Systemobject.ToList();
+                        HttpContext.Session.SetString("permissions", JsonConvert.SerializeObject(systempermissions));
+                        HttpContext.Session.SetString("object", JsonConvert.SerializeObject(systemobjects));
                         return Json(new { status = true, message = "Login Successfull!", returnUrl = returnUrl });
                     }
                     else
