@@ -14,10 +14,13 @@ namespace BISM.Models.MainSystem
         public string ObjectSystemImageFileName { get; set; }
         public string UrlObjectName { get; set; }
         public byte ObjectSeqNo { get; set; }
+        public string ControllerName { get; set; }
+        public string ActionName { get; set; }
         public short RowStatus { get; set; }
         public string CreatedBy { get; set; }
         public DateTime CreatedTime { get; set; }
         public string LastModifiedBy { get; set; }
         public DateTime? LastModifiedTime { get; set; }
+        public string icon { get; set; }
     }
 }

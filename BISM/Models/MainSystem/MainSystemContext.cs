@@ -410,6 +410,23 @@ namespace BISM.Models.MainSystem
                     .HasMaxLength(150)
                     .IsUnicode(false)
                     .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.ControllerName)
+                   .HasColumnName("ControllerName")
+                   .HasMaxLength(150)
+                   .IsUnicode(false)
+                   .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.ActionName)
+                   .HasColumnName("ActionName")
+                   .HasMaxLength(150)
+                   .IsUnicode(false)
+                   .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.icon)
+                   .HasColumnName("Icon")
+                   .HasMaxLength(20)
+                   .IsUnicode(false);
             });
 
             modelBuilder.Entity<Systempermission>(entity =>

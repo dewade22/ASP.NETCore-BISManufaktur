@@ -1,9 +1,12 @@
 ﻿@using static BISM.helpers.NavigationIndicatorHelper;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@using Microsoft.AspNetCore.Http;
 <ul class="main-menu">
-    <li class="@Url.MakeActiveClass("home","index")">
+    <li class="@Url.MakeActiveClass("/Home/Index")">
         <a asp-controller="Home" asp-action="Index"><i class="zmdi zmdi-home"></i> Home</a>
     </li>
-    <li class="@Url.MakeActiveClass("home","privacy")">
+    <li class="@Url.MakeActiveClass("/Home/Privacy")">
         <a asp-controller="Home" asp-action="Privacy"><i class="zmdi zmdi-lock"></i> Privacy</a>
     </li>
+    @Html.Raw(HttpContextAccessor.HttpContext.Session.GetString("menuString"))
 </ul>
