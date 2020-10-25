@@ -14,6 +14,7 @@ namespace BISM.helpers
 {
     public class AuthorizedAction : ActionFilterAttribute
     {
+        //ini belum selesai
         
         
         public override void OnResultExecuting(ResultExecutingContext filterContext)

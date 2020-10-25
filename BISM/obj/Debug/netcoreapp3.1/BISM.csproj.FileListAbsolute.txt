@@ -317,3 +317,4 @@ D:\Balimoon\BISM\ASP.NETCore-BISManufaktur\BISM\obj\Debug\netcoreapp3.1\BISM.dll
 D:\Balimoon\BISM\ASP.NETCore-BISManufaktur\BISM\obj\Debug\netcoreapp3.1\BISM.pdb
 D:\Balimoon\BISM\ASP.NETCore-BISManufaktur\BISM\obj\Debug\netcoreapp3.1\Razor\Views\Shared\custom\_LoginLayout.cshtml.g.cs
 D:\Balimoon\BISM\ASP.NETCore-BISManufaktur\BISM\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\Balimoon\BISM\ASP.NETCore-BISManufaktur\BISM\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs

@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BISM.Models.MainSystem;
+using BISM.Models.BalimoonBML;
 
 namespace BISM
 {
@@ -33,7 +34,9 @@ namespace BISM
                     Configuration["Data:MainSystem:ConnectionString"]));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<MainSystemContext>();
-
+            services.AddDbContext<BalimoonBMLContext>(options =>
+                options.UseSqlServer(
+                    Configuration["Data:BalimoonBML:ConnectionString"]));
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddSession(options =>
