@@ -1,0 +1,106 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace BISM.Models.BalimoonBML
+{
+    public partial class Stores
+    {
+        public int StoresId { get; set; }
+        public string StoreNo { get; set; }
+        public string ResponsibilityCenter { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string Address2 { get; set; }
+        public string City { get; set; }
+        public string PostCode { get; set; }
+        public string StoreManagerId { get; set; }
+        public TimeSpan? StoreOpenfrom { get; set; }
+        public TimeSpan? StoreOpento { get; set; }
+        public string PhoneNo { get; set; }
+        public string CountryCode { get; set; }
+        public string GlobalDimension1Code { get; set; }
+        public string LocationCode { get; set; }
+        public string CurrencyCode { get; set; }
+        public string GlobalDimension2Code { get; set; }
+        public byte? StoreOpenAfterMidnight { get; set; }
+        public string PosfuncProfile { get; set; }
+        public decimal? FraudSortField { get; set; }
+        public byte? LiloinTransaction { get; set; }
+        public string NoSeries { get; set; }
+        public string StatementNos { get; set; }
+        public string PostedStatemNos { get; set; }
+        public byte? OneStatementperDay { get; set; }
+        public int? StatementMethod { get; set; }
+        public int? ClosingMethod { get; set; }
+        public string RoundingAccount { get; set; }
+        public decimal? MaxDifftoAllowPost { get; set; }
+        public decimal? MaxRoundinStmt { get; set; }
+        public decimal? MaxDifffromShiftDate { get; set; }
+        public decimal? AllowedDiffinTrans { get; set; }
+        public int? TendDeclCalculation { get; set; }
+        public byte? AdvancedShiftMethod { get; set; }
+        public string AdvancedShiftNos { get; set; }
+        public string DefaultCommissionGroup { get; set; }
+        public string TotalDiscountTender { get; set; }
+        public byte? CreateLabelsfor0Price { get; set; }
+        public string CampaignNos { get; set; }
+        public string PromotionNos { get; set; }
+        public string PeriodicDiscountNos { get; set; }
+        public string PosterminalNos { get; set; }
+        public string StaffIdnos { get; set; }
+        public string CouponNos { get; set; }
+        public string ItemNos { get; set; }
+        public byte? DataAccessControl { get; set; }
+        public string StoreVatbusPostGr { get; set; }
+        public string StoreGenBusPostGr { get; set; }
+        public string LanguageCode { get; set; }
+        public byte? PosinventoryLookup { get; set; }
+        public int? RcptTextMaxLength { get; set; }
+        public int? NoofTopBottomLines { get; set; }
+        public int? ItemNoonReceipt { get; set; }
+        public int? LastActionforLabelUpd { get; set; }
+        public int? LastActionforItemLabelUpd { get; set; }
+        public byte? NoShelfLabelPrinting { get; set; }
+        public byte? NoItemLabelPrinting { get; set; }
+        public decimal? ServiceChargePercent { get; set; }
+        public string ServChargeIncExpAcc { get; set; }
+        public string ServiceChargePrompt { get; set; }
+        public string CustomsNos { get; set; }
+        public string CurrentShift { get; set; }
+        public string EmailAddress { get; set; }
+        public string Posnos { get; set; }
+        public string PospostingNos { get; set; }
+        public string PosshippingNos { get; set; }
+        public byte? PoscheckZreport { get; set; }
+        public int? AutomaticDrawerCreation { get; set; }
+        public int? AutomaticSalespersonCreation { get; set; }
+        public int? Storesizesquaremeters { get; set; }
+        public decimal? ShowSalesPrice { get; set; }
+        public string ReceivingNos { get; set; }
+        public string PostedReceivingNos { get; set; }
+        public int? DefBommethod { get; set; }
+        public string GiftRegistrationNos { get; set; }
+        public byte? UseBatchPostingforStatem { get; set; }
+        public byte? OnlyAcceptStatement { get; set; }
+        public decimal? MaxDifftoAllowAccept { get; set; }
+        public string CurrentHospPrintingRoute { get; set; }
+        public int? PosstartAmountMethod { get; set; }
+        public byte? PosttoBankAccount { get; set; }
+        public int? OrderingStatus { get; set; }
+        public int? DeliveryTakeoutChange { get; set; }
+        public int? RestOrdersinProgress { get; set; }
+        public decimal? RestEstimProdTimeMin { get; set; }
+        public byte? RestStationPrintInUse { get; set; }
+        public int? NormalOrderTiming { get; set; }
+        public int? MaxOrderTimingMin { get; set; }
+        public int? TimeRoundingPrecision { get; set; }
+        public string WarrantyHotelStoreGuid { get; set; }
+        public byte? UnsentWhotelModification { get; set; }
+        public string CustomerNo { get; set; }
+        public short RowStatus { get; set; }
+        public string CreatedBy { get; set; }
+        public DateTime CreatedTime { get; set; }
+        public string LastModifiedBy { get; set; }
+        public DateTime? LastModifiedTime { get; set; }
+    }
+}
