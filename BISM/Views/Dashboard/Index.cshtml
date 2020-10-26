@@ -33,7 +33,7 @@
                                     <th colspan="3">Stock</th>
                                 </tr>
                                 <tr>
-                                    <th style="text-align:center"> Finish Goods</th>
+                                    <th style="text-align:center"> WH. Finish Goods </th>
                                     <th>5000 ml</th>
                                     <th>700 ml</th>
                                     <th>250 ml</th>
@@ -165,6 +165,34 @@
                                     <td></td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td>Pineapple</td>
+                                    <td id="pn5">0</td>
+                                    <td id="pn7">0</td>
+                                    <td id="pn25">0</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Paper Mint</td>
+                                    <td id="pm5">0</td>
+                                    <td id="pm7">0</td>
+                                    <td id="pm25">0</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td colspan="3">750 ML</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Black Bull</td>
+                                    <td id="BB" colspan="3">0</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -192,97 +220,156 @@
                 if (res.result == "OK") {
                     let omrach7 = 0;
                     let omrach2 = 0;
+                    let blackbull = 0;
                     
                     $.each(res.data, function (i, item) {
                         switch (res.data[i].itemno) {
-                            case "700510": case "700509": case"80059": case "700203":
+                            case "700445": case "700264": //700510 700509 80059 700203 dengan cukai
                                 omrach7 += res.data[i].total;
                                 break;
-                            case "700225": case "80060": case "80061": case "80062":
+                            case "700246": case "700446": case "700447": case "700477": //700225 80060 80061 80062 dengan cukai
                                 omrach2 += res.data[i].total;
-                                break;
-                            case "80015":
+                                break; 
+                            case "700260": //80015 dengan cukai
                                 $("#9vd700").html(res.data[i].total);
                                 break;
-                            case "80043":
-                                $("#9vd5000").html(res.data[i].total);
-                                break;
-                            case "700204":
+                            case "700263": //700204 dengan cukai
                                 $("#silver700").html(res.data[i].total);
                                 break;
-                            case "700226":
-                                $("#silver250").html(res.data[i].total);
-                                break;
-                            case "80056":
+                            case "700262": //700261 80056 dengan cukai
                                 $("#blanco700").html(res.data[i].total);
                                 break;
-                            case "80057":
+                            case "700244": //80057 dengan cukai
                                 $("#blanco250").html(res.data[i].total);
                                 break;
-                            case "80058":
+                            case "700273": //80058 dengan cukai
                                 $("#blanco5").html(res.data[i].total);
                                 break;
-                            case "80014":
+                            case "700349": //80014 dengan cukai
                                 $("#bmvd7").html(res.data[i].total);
                                 break;
-                            case "80044":
+                            case "700272": //80044 dengan cukai
                                 $("#bmvd5").html(res.data[i].total);
                                 break;
-                            case "80055":
+                            case "700243": //80055 dengan cukai
                                 $("#bmvd25").html(res.data[i].total);
                                 break;
-                            case "80006":
+                            case "700252": //80006 
                                 $("#ts7").html(res.data[i].total);
                                 break;
-                            case "80042":
+                            case "700270": //80042
                                 $("#ts5").html(res.data[i].total);
                                 break;
-                            case "80035":
+                            case "700271": //80035
                                 $("#bc5").html(res.data[i].total);
                                 break;
-                            case "80007":
+                            case "700253": //80007
                                 $("#bc7").html(res.data[i].total);
                                 break;
-                            case "80038":
+                            case "700267": //80038
                                 $("#cof5").html(res.data[i].total);
                                 break;
-                            case "80003":
+                            case "700249": //80003
                                 $("#cof7").html(res.data[i].total);
                                 break;
-                            case "80039":
+                            case "700266": //80039
                                 $("#coco5").html(res.data[i].total);
                                 break;
-                            case "80002":
+                            case "700248": //80002
                                 $("#coco7").html(res.data[i].total);
                                 break;
-                            case "80013":
+                            case "700258": //80013
                                 $("#bk7").html(res.data[i].total);
                                 break;
-                            case "80001":
+                            case "700265": //
+                                $("#bn5").html(res.data[i].total)
+                                break;
+                            case "700247": //80001
                                 $("#bn7").html(res.data[i].total);
                                 break;
-                            case "80011":
+                            case "700256": //80011
                                 $("#bs7").html(res.data[i].total);
                                 break;
-                            case "80012":
+                            case "700257": //80012
                                 $("#hz7").html(res.data[i].total);
                                 break;
-                            case "80010":
+                            case "700255": //80010
                                 $("#lc7").html(res.data[i].total);
                                 break;
-                            case "80005":
+                            case "700269": //
+                                $("#ml5").html(res.data[i].total);
+                                break;
+                            case "700251": //80005
                                 $("#ml7").html(res.data[i].total);
+                                break;
+                            case "700250": //80004
+                                $("#pn7").html(res.data[i].total);
+                                break;
+                            case "700268": //
+                                $("#pn5").html(res.data[i].total);
+                                break;
+                            case "700254": //80008
+                                $("#pm7").html(res.data[i].total);
+                                break;
+                            case "700466": //700450 700499
+                                blackbull += res.data[i].total;
                                 break;
                         }
                     })
                     $("#omrach700").html(omrach7);
                     $("#omrach250").html(omrach2);
+                    $("#BB").html(blackbull);
                 }
             }
         }).then(function () {
             setTimeout(update, 30000);
         });
     })();
-    
+    (function nonWHFG() {
+        $.ajax({
+            type: "GET",
+            url: "/api/stockile",
+            success: function (res) {
+                if (res.result == "OK") {
+                    let alkohol = 0;
+                    let gula = 0;
+                    let botolWhiskey700 = 0;
+                    let botol9 = 0;
+                    let botolSpirit = 0;
+                    $.each(res.data, function (i, item) {
+                        switch (res.data[i].itemno) {
+                            case "50000": case "50001": case "50008": case "50009": case "70178":
+                                alkohol += res.data[i].total;
+                                break;
+                            case "700414": case "50010": case "50005":
+                                gula += res.data[i].total;
+                                break;
+                            case "700326": case "70184":
+                                botolWhiskey700 += res.data[i].total;
+                                break;
+                            case "70021": case "70022":
+                                botol9 += res.data[i].total;
+                                break;
+                            case "700284": case "70180":
+                                botolSpirit += res.data[i].total;
+                                break;
+                            case "700423": //Blackbull
+                                $("#botolBB75").html(res.data[i].total);
+                                break;
+                        }
+                        $("#matAlkohol").html(alkohol);
+                        $("#gula").html(gula);
+                        $("#botolOmrach7").html(botolWhiskey700);
+                        $("#botol9_7").html(botol9);
+                        $("#spirit700").html(botolSpirit);
+                        
+
+                    })
+                }
+            }
+        }).then(function () {
+            setTimeout(nonWHFG, 30000);
+        });
+    })();
 </script>
 }
