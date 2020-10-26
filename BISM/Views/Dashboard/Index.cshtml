@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Dashboard";
     Layout = "~/Views/Shared/custom/_Layouts.cshtml";
 }
 <section id="content">
@@ -33,44 +33,137 @@
                                     <th colspan="3">Stock</th>
                                 </tr>
                                 <tr>
-                                    <th> Finish Goods</th>
-                                    <th>5000</th>
-                                    <th>700</th>
-                                    <th>250</th>
-                                    <th colspan="2">Material</th>
+                                    <th style="text-align:center"> Finish Goods</th>
+                                    <th>5000 ml</th>
+                                    <th>700 ml</th>
+                                    <th>250 ml</th>
+                                    <th colspan="2" style="text-align:center">Material</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Omrach</td>
                                     <td>0</td>
-                                    <td id="omrach700"></td>
-                                    <td id="omrach250"></td>
+                                    <td id="omrach700">0</td>
+                                    <td id="omrach250">0</td>
                                     <td>Alkohol</td>
                                     <td id="matAlkohol">0</td>
                                 </tr>
                                 <tr>
                                     <td>Vodka 9</td>
-                                    <td>0</td>
-                                    <td id="9vd700"></td>
+                                    <td id="9vd5000">0</td>
+                                    <td id="9vd700">0</td>
                                     <td id="9vd250">0</td>
                                     <td>Gula</td>
                                     <td id="gula">0</td>
                                 </tr>
                                 <tr>
                                     <td>Silver</td>
-                                    <td>0</td>
-                                    <td id="silver700"></td>
-                                    <td id="silver250"></td>
-                                    <td colspan="2">Bottle</td>
+                                    <td id="silver5000">0</td>
+                                    <td id="silver700">0</td>
+                                    <td id="silver250">0</td>
+                                    <td colspan="2" style="text-align:center">Bottle</td>
                                 </tr>
                                 <tr>
                                     <td>Blanco</td>
-                                    <td id="blanco5"></td>
-                                    <td id="blanco700"></td>
-                                    <td id="blanco250"></td>
-                                    <td>700 Omrach</td>
-                                    <td id="botolOmrach7"></td>
+                                    <td id="blanco5">0</td>
+                                    <td id="blanco700">0</td>
+                                    <td id="blanco250">0</td>
+                                    <td>700 Whiskey</td>
+                                    <td id="botolOmrach7">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Blue Vodka</td>
+                                    <td id="bmvd5">0</td>
+                                    <td id="bmvd7">0</td>
+                                    <td id="bmvd25">0</td>
+                                    <td>700 Vodka9</td>
+                                    <td id="botol9_7">0</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="text-align:center">Liqueurs</td>
+                                    <td>700 Spirit</td>
+                                    <td id="spirit700">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Tripple Sec</td>
+                                    <td id="ts5">0</td>
+                                    <td id="ts7">0</td>
+                                    <td id="ts25">0</td>
+                                    <td>750 BlackBull</td>
+                                    <td id="botolBB75">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Blue Curacao</td>
+                                    <td id="bc5">0</td>
+                                    <td id="bc7">0</td>
+                                    <td id="bc25">0</td>
+                                    <td></td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Cofee</td>
+                                    <td id="cof5">0</td>
+                                    <td id="cof7">0</td>
+                                    <td id="cof25">0</td>
+                                    <td></td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Coconut</td>
+                                    <td id="coco5">0</td>
+                                    <td id="coco7">0</td>
+                                    <td id="coco25">0</td>
+                                    <td></td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Black Currant</td>
+                                    <td id="bk5">0</td>
+                                    <td id="bk7">0</td>
+                                    <td id="bk25">0</td>
+                                    <td></td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Banana</td>
+                                    <td id="bn5">0</td>
+                                    <td id="bn7">0</td>
+                                    <td id="bn25">0</td>
+                                    <td></td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Butter Schotch</td>
+                                    <td id="bs5">0</td>
+                                    <td id="bs7">0</td>
+                                    <td id="bs25">0</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Hazelnut</td>
+                                    <td id="hz5">0</td>
+                                    <td id="hz7">0</td>
+                                    <td id="hz25">0</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lychee</td>
+                                    <td id="lc5">0</td>
+                                    <td id="lc7">0</td>
+                                    <td id="lc25">0</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Melon</td>
+                                    <td id="ml5">0</td>
+                                    <td id="ml7">0</td>
+                                    <td id="ml25">0</td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -97,16 +190,93 @@
             success: function (res) {
                 //var res = JSON.parse(data);
                 if (res.result == "OK") {
+                    let omrach7 = 0;
+                    let omrach2 = 0;
+                    
                     $.each(res.data, function (i, item) {
-                        if (res.data[i].itemno == "700203") {
-                            $("#omrach700").html(res.data[i].total);
-                        }
-                        else if (res.data[i].itemno === "700225") {
-                            $("#omrach250").html(res.data[i].total);
+                        switch (res.data[i].itemno) {
+                            case "700510": case "700509": case"80059": case "700203":
+                                omrach7 += res.data[i].total;
+                                break;
+                            case "700225": case "80060": case "80061": case "80062":
+                                omrach2 += res.data[i].total;
+                                break;
+                            case "80015":
+                                $("#9vd700").html(res.data[i].total);
+                                break;
+                            case "80043":
+                                $("#9vd5000").html(res.data[i].total);
+                                break;
+                            case "700204":
+                                $("#silver700").html(res.data[i].total);
+                                break;
+                            case "700226":
+                                $("#silver250").html(res.data[i].total);
+                                break;
+                            case "80056":
+                                $("#blanco700").html(res.data[i].total);
+                                break;
+                            case "80057":
+                                $("#blanco250").html(res.data[i].total);
+                                break;
+                            case "80058":
+                                $("#blanco5").html(res.data[i].total);
+                                break;
+                            case "80014":
+                                $("#bmvd7").html(res.data[i].total);
+                                break;
+                            case "80044":
+                                $("#bmvd5").html(res.data[i].total);
+                                break;
+                            case "80055":
+                                $("#bmvd25").html(res.data[i].total);
+                                break;
+                            case "80006":
+                                $("#ts7").html(res.data[i].total);
+                                break;
+                            case "80042":
+                                $("#ts5").html(res.data[i].total);
+                                break;
+                            case "80035":
+                                $("#bc5").html(res.data[i].total);
+                                break;
+                            case "80007":
+                                $("#bc7").html(res.data[i].total);
+                                break;
+                            case "80038":
+                                $("#cof5").html(res.data[i].total);
+                                break;
+                            case "80003":
+                                $("#cof7").html(res.data[i].total);
+                                break;
+                            case "80039":
+                                $("#coco5").html(res.data[i].total);
+                                break;
+                            case "80002":
+                                $("#coco7").html(res.data[i].total);
+                                break;
+                            case "80013":
+                                $("#bk7").html(res.data[i].total);
+                                break;
+                            case "80001":
+                                $("#bn7").html(res.data[i].total);
+                                break;
+                            case "80011":
+                                $("#bs7").html(res.data[i].total);
+                                break;
+                            case "80012":
+                                $("#hz7").html(res.data[i].total);
+                                break;
+                            case "80010":
+                                $("#lc7").html(res.data[i].total);
+                                break;
+                            case "80005":
+                                $("#ml7").html(res.data[i].total);
+                                break;
                         }
                     })
-
-
+                    $("#omrach700").html(omrach7);
+                    $("#omrach250").html(omrach2);
                 }
             }
         }).then(function () {
